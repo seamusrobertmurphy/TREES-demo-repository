@@ -1,0 +1,6 @@
+- source: README.qmd
+  quarto-pub:
+    - id: e6a2e729-e473-40a6-9f8f-07e8b9f654d3
+      url: https://seamusrobertmurphy.quarto.pub/art-trees-audit-repository-demo
+    - id: c81ad085-6e96-4d26-966b-b206904b2878
+      url: https://seamusrobertmurphy.quarto.pub/art-trees-submission

@@ -46,14 +46,10 @@ The uncertainty adjustment factor ($UAdj_t$) quantifies the proportional adjustm
 reductions and removals based on statistical uncertainty. It is defined as:
 
 $$
-UAdj_t = 0.524417 \times \frac{HW_{90\%t}}{1.645006}
+UAdj_t = 0.524417 \times \frac{HW_{90\% CI_t }}{{1.645006}}
 $$
 
-$$
-UAdj_t = 0.524417 \times \frac{HW_{90\%t}}{1.645006}
-$$
-
-##### Table 2: Parameters used in Equation 11
+##### able 2: Parameters used in Equation 11
 
 |                       |                                                                 |
 |-----------------------|-----------------------------------------------------------------|

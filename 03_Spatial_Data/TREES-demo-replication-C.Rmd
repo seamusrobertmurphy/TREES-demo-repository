@@ -1,10 +1,10 @@
 ---
-title: "ART-TREES Audit Replication Demo-C"
+title: "REDD+ Nesting Feasibility"
 author: "Winrock Intl"
 date: "`r Sys.Date()`"
 subtitle: "Scoping potential of nested REDD+ markets with risk-allocated deforestation mapping"
 output:
-  github_document:
+  pdf_document:
     toc: true
     toc_depth: 4
 
@@ -112,7 +112,7 @@ tmap::tm_shape(aoi_country) + tmap::tm_borders(col="purple", lwd=2) +
 
 #### Built Environment
 
-```{r, , class.source = c("numCode", "r", "numberLines")}
+```{r, , class.source = c("numCode", "r", "numberLines"), eval=F}
 library(osmdata)
 library(httr2)
 library(ggmap)
@@ -295,9 +295,6 @@ We applied this risk index to inform a risk weighted allocation of a
 risk by zonal forest loss, and second by factoring out annual zonal
 loss by multiplying by pixel risk values, as shown below.[^1]
 
-[^1]: We computed risk allocation based on each pixel's risk value
-    relative to the sum of all pixel risks in that zone.
-
 $$
 \mathrm{AllocatedLoss}_{\mathrm{pixel}}
 =
@@ -345,3 +342,6 @@ tmap::tmap_arrange(tm3, tm4, tm6, tm5, ncols=2)
 ```
 
 #### Visualize Deforestation Allocation
+
+[^1]: We computed risk allocation based on each pixel's risk value
+    relative to the sum of all pixel risks in that zone.
