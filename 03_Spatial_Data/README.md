@@ -18,13 +18,13 @@
 -   [Risk-allocated deforestation](#risk-allocated-deforestation)
 -   [Stratification of deforestation pixels](#visualize-deforestation-allocation)
 
-### Introduction {#introduction}
+### Introduction 
 
 The following spatial covariates were imported as potential drivers of deforestation risk. Covariates were merged between demographic and geographic datasets surrounding the project area and national level datasets beyond the project area in order to enable jurisdictional analysis.
 
 ------------------------------------------------------------------------
 
-### Import data {#import-data}
+### Import data 
 
 #### AOI Jurisdiction {#aoi-jurisdiction}
 
@@ -74,7 +74,7 @@ tmap::tm_shape(aoi_country) + tmap::tm_borders(col="purple", lwd=2) +
 
 ------------------------------------------------------------------------
 
-#### Built Environment {#built-environment}
+#### Built Environment 
 
 ``` r
 library(osmdata)
@@ -326,7 +326,7 @@ tmap::tm_shape(aoi_country) + tmap::tm_borders(col="purple", lwd=1) +
 
 ------------------------------------------------------------------------
 
-#### Transportation {#transportation}
+#### Transportation 
 
 ``` r
 # Motorway/Highways
@@ -374,7 +374,7 @@ tmap::tm_shape(aoi_country) + tmap::tm_borders(col="green", lwd=3) +
 
 ------------------------------------------------------------------------
 
-#### Hydrography {#hydrography}
+#### Hydrography 
 
 ``` r
 waterways_country = sf::st_read("./03_Spatial_Data/HYDRO/waterways_country.shp")  #|>
@@ -400,7 +400,7 @@ sf::st_write(water_merged, "./03_Spatial_Data/HYDRO/water_merged.shp", delete_ds
 
 ------------------------------------------------------------------------
 
-#### Topography {#topography}
+#### Topography 
 
 ``` r
 ##################################
@@ -428,7 +428,7 @@ raster::writeRaster(slope_percent,"./03_Spatial_Data/TOPO/slope_percent.tif", ov
 
 ------------------------------------------------------------------------
 
-### Risk-allocated deforestation {#risk-allocated-deforestation}
+### Risk-allocated deforestation 
 
 Two methods were explored for weighting variables and creating a generalized deforestation risk index. For efficiency of time, we adopted the following risk indexing approach, which was based on a weighted sum of subjectively scored covariate effects. Please note this approach was also recommended for its ease of updating in subsequent iterations.
 
@@ -458,7 +458,7 @@ Both formulas describe the same operation in different orders of multiplication:
 
 ------------------------------------------------------------------------
 
-#### Visualize Deforestation Risk {#visualize-deforestation-risk}
+#### Visualize Deforestation Risk 
 
 ``` r
 #### assemble covariates
