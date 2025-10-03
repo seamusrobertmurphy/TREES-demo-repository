@@ -26,7 +26,7 @@ The following spatial covariates were imported as potential drivers of deforesta
 
 ### Import data 
 
-#### AOI Jurisdiction {#aoi-jurisdiction}
+#### AOI Jurisdiction 
 
 ``` r
 library(geodata)
