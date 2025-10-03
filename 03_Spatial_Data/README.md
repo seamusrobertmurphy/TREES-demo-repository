@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 70
----
-
 <img src="https://art.apx.com/images/ART.png" width="500"/>
 
 # [![LinkedIn Badge](https://img.shields.io/badge/Project-Profile-blue){alt="LinkedIn Badge"}](#0) [![Pubs Badge](https://img.shields.io/badge/Project-Pubs-critical){alt="Pubs Badge"}](#0) [![Twitter Badge](https://img.shields.io/badge/Project-Tweets-critical?color=blue){alt="Twitter Badge"}](#0) [![Program Badge](https://img.shields.io/badge/Project-Steward-critical){alt="Program Badge"}](#0) [![Annexes Badge](https://img.shields.io/badge/Submission-Annexes-critical?color=blue){alt="Annexes Badge"}](#0)
@@ -20,18 +14,13 @@ editor_options:
     -   [Hydrography](#hydrography)
     -   [Topography](#topography)
 -   [Risk-allocated deforestation](#risk-allocated-deforestation)
--   [Visualize Deforestation
-    Allocation](#visualize-deforestation-allocation)
+-   [Stratification of deforestation pixels](#visualize-deforestation-allocation)
 
 ### Introduction {#introduction}
 
-The following spatial covariates were imported as potential drivers of
-deforestation risk. Covariates were merged between demographic and
-geographic datasets surrounding the project area and national level
-datasets beyond the project area in order to enable jurisdictional
-analysis.
+The following spatial covariates were imported as potential drivers of deforestation risk. Covariates were merged between demographic and geographic datasets surrounding the project area and national level datasets beyond the project area in order to enable jurisdictional analysis.
 
-----------------------------------------------------------------------
+------------------------------------------------------------------------
 
 ### Import data {#import-data}
 
@@ -81,7 +70,7 @@ tmap::tm_shape(aoi_country) + tmap::tm_borders(col="purple", lwd=2) +
 
 ![](MAPS/Map_RiskCovariateScopingA_202508.png)
 
-----------------------------------------------------------------------
+------------------------------------------------------------------------
 
 #### Built Environment {#built-environment}
 
@@ -333,7 +322,7 @@ tmap::tm_shape(aoi_country) + tmap::tm_borders(col="purple", lwd=1) +
   #tmap::tm_basemap("Esri.WorldImagery") 
 ```
 
-----------------------------------------------------------------------
+------------------------------------------------------------------------
 
 #### Transportation {#transportation}
 
@@ -381,7 +370,7 @@ tmap::tm_shape(aoi_country) + tmap::tm_borders(col="green", lwd=3) +
   #tmap::tm_basemap("Esri.WorldImagery") 
 ```
 
-----------------------------------------------------------------------
+------------------------------------------------------------------------
 
 #### Hydrography {#hydrography}
 
@@ -407,7 +396,7 @@ water_merged = sf::st_cast(water_merged, "MULTILINESTRING")
 sf::st_write(water_merged, "./03_Spatial_Data/HYDRO/water_merged.shp", delete_dsn=T)
 ```
 
-----------------------------------------------------------------------
+------------------------------------------------------------------------
 
 #### Topography {#topography}
 
@@ -435,21 +424,13 @@ slope_percent = raster::raster(slope_percent)
 raster::writeRaster(slope_percent,"./03_Spatial_Data/TOPO/slope_percent.tif", overwrite=T)
 ```
 
-----------------------------------------------------------------------
+------------------------------------------------------------------------
 
 ### Risk-allocated deforestation {#risk-allocated-deforestation}
 
-Two methods were explored for weighting variables and creating a
-generalized deforestation risk index. For efficiency of time, we
-adopted the following risk indexing approach, which was based on a
-weighted sum of subjectively scored covariate effects. Please note
-this approach was also recommended for its ease of updating in
-subsequent iterations.
+Two methods were explored for weighting variables and creating a generalized deforestation risk index. For efficiency of time, we adopted the following risk indexing approach, which was based on a weighted sum of subjectively scored covariate effects. Please note this approach was also recommended for its ease of updating in subsequent iterations.
 
-We applied this risk index to inform a risk weighted allocation of a
-10-year deforestation rate, first by multiplying the fraction of pixel
-risk by zonal forest loss, and second by factoring out annual zonal
-loss by multiplying by pixel risk values, as shown below.[^1]
+We applied this risk index to inform a risk weighted allocation of a 10-year deforestation rate, first by multiplying the fraction of pixel risk by zonal forest loss, and second by factoring out annual zonal loss by multiplying by pixel risk values, as shown below.[^readme-1]
 
 $$
 \mathrm{AllocatedLoss}_{\mathrm{pixel}}
@@ -471,14 +452,9 @@ $$
 \right)
 $$
 
-Both formulas describe the same operation in different orders of
-multiplication: each pixel in a given zone Z receives a share of
-`annual_loss_10yr` based on its proportional risk. This ensures that
-higher-risk pixels are allocated higher deforestation loss, which is
-in line with Verra guidance regarding allocated deforestation risk
-maps.
+Both formulas describe the same operation in different orders of multiplication: each pixel in a given zone Z receives a share of `annual_loss_10yr` based on its proportional risk. This ensures that higher-risk pixels are allocated higher deforestation loss, which is in line with Verra guidance regarding allocated deforestation risk maps.
 
-----------------------------------------------------------------------
+------------------------------------------------------------------------
 
 #### Visualize Deforestation Risk {#visualize-deforestation-risk}
 
@@ -499,5 +475,4 @@ tmap::tmap_arrange(tm3, tm4, tm6, tm5, ncols=2)
 
 #### Visualize Deforestation Allocation {#visualize-deforestation-allocation}
 
-[^1]: We computed risk allocation based on each pixel’s risk value
-    relative to the sum of all pixel risks in that zone.
+[^readme-1]: We computed risk allocation based on each pixel’s risk value relative to the sum of all pixel risks in that zone.
