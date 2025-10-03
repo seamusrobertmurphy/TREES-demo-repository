@@ -475,6 +475,6 @@ tmap::tmap_mode("plot")
 tmap::tmap_arrange(tm3, tm4, tm6, tm5, ncols=2)
 ```
 
-#### Visualize Deforestation Allocation {#visualize-deforestation-allocation}
+#### Stratification of Distributed Deforestation Pixels
 
 [^readme-1]: We computed risk allocation based on each pixel’s risk value relative to the sum of all pixel risks in that zone.
