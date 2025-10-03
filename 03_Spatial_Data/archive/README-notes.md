@@ -4,24 +4,47 @@ editor_options:
     wrap: 70
 ---
 
-<img src="https://art.apx.com/images/ART.png" width="500"/>
+----------------------------------------------------------------------
 
-# [![LinkedIn Badge](https://img.shields.io/badge/Project-Profile-blue){alt="LinkedIn Badge"}](#0) [![Pubs Badge](https://img.shields.io/badge/Project-Pubs-critical){alt="Pubs Badge"}](#0) [![Twitter Badge](https://img.shields.io/badge/Project-Tweets-critical?color=blue){alt="Twitter Badge"}](#0) [![Program Badge](https://img.shields.io/badge/Project-Steward-critical){alt="Program Badge"}](#0) [![Annexes Badge](https://img.shields.io/badge/Submission-Annexes-critical?color=blue){alt="Annexes Badge"}](#0)
+[![LinkedIn
+Badge](https://img.shields.io/badge/Project-Profile-blue){alt="LinkedIn Badge"}](#0)
+[![Pubs
+Badge](https://img.shields.io/badge/Project-Pubs-critical){alt="Pubs Badge"}](#0)
+[![Twitter
+Badge](https://img.shields.io/badge/Project-Tweets-critical?color=blue){alt="Twitter Badge"}](#0)
+[![Program
+Badge](https://img.shields.io/badge/Project-Steward-critical){alt="Program Badge"}](#0)
+[![Annexes
+Badge](https://img.shields.io/badge/Submission-Annexes-critical?color=blue){alt="Annexes Badge"}](#0)
 
-# Task 3 Nesting Framework
-
-#### *Development and Validation of Spatial Covariates for Inputs to Deforestation Risk Modelling*
+Winrock Intl 2025-08
 
 -   [Introduction](#introduction)
+
 -   [Import data](#import-data)
+
     -   [AOI Jurisdiction](#aoi-jurisdiction)
     -   [Built Environment](#built-environment)
     -   [Transportation](#transportation)
     -   [Hydrography](#hydrography)
     -   [Topography](#topography)
+
 -   [Risk-allocated deforestation](#risk-allocated-deforestation)
+
+    -   [Visualize Deforestation Risk](#visualize-deforestation-risk)
+
 -   [Visualize Deforestation
     Allocation](#visualize-deforestation-allocation)
+
+----------------------------------------------------------------------
+
+<p align="right">
+  <img src="https://art.apx.com/images/ART.png" alt="ART Logo" width="10%">
+</p>
+
+# ART-TREES Audit Replication Demo (C)
+
+#### *Scoping nested REDD+ markets with risk-allocated deforestation mapping*
 
 ### Introduction {#introduction}
 
