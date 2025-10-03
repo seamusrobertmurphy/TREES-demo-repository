@@ -1,8 +1,10 @@
 <img src="https://art.apx.com/images/ART.png" width="500"/>
 
-# [![LinkedIn Badge](https://img.shields.io/badge/Project-Profile-blue){alt="LinkedIn Badge"}](#0) [![Pubs Badge](https://img.shields.io/badge/Project-Pubs-critical){alt="Pubs Badge"}](#0) [![Twitter Badge](https://img.shields.io/badge/Project-Tweets-critical?color=blue){alt="Twitter Badge"}](#0) [![Program Badge](https://img.shields.io/badge/Project-Steward-critical){alt="Program Badge"}](#0) [![Annexes Badge](https://img.shields.io/badge/Submission-Annexes-critical?color=blue){alt="Annexes Badge"}](#0)
+[![LinkedIn Badge](https://img.shields.io/badge/Project-Profile-blue)](https://art.apx.com/mymodule/reg/TabDocuments.asp?r=111&ad=Prpt&act=update&type=PRO&aProj=pub&tablename=doc&id1=109) [![Pubs Badge](https://img.shields.io/badge/Project-Pubs-critical)](https://orcid.org/my-orcid?orcid=0000-0002-1792-0351) [![Twitter Badge](https://img.shields.io/badge/Project-Tweets-critical?color=blue)](https://x.com/) [![Program Badge](https://img.shields.io/badge/Project-Steward-critical)](https://www.ambiente.gob.ec/) [![Annexes Badge](https://img.shields.io/badge/Submission-Annexes-critical?color=blue)](https://nextcloud.ambiente.gob.ec)
 
-# Task 3 Nesting Framework
+------------------------------------------------------------------------
+
+# Task 3 Nesting Framework Analysis
 
 #### *Development and Validation of Spatial Covariates for Inputs to Deforestation Risk Modelling*
 
