@@ -1,3 +1,7 @@
+---
+bibliography: references.bib
+---
+
 <img src="https://art.apx.com/images/ART.png" width="500"/>
 
 [![LinkedIn Badge](https://img.shields.io/badge/Project-Profile-blue)](https://art.apx.com/mymodule/reg/TabDocuments.asp?r=111&ad=Prpt&act=update&type=PRO&aProj=pub&tablename=doc&id1=109) [![Pubs Badge](https://img.shields.io/badge/Project-Pubs-critical)](https://orcid.org/my-orcid?orcid=0000-0002-1792-0351) [![Twitter Badge](https://img.shields.io/badge/Project-Tweets-critical?color=blue)](https://x.com/) [![Program Badge](https://img.shields.io/badge/Project-Steward-critical)](https://www.ambiente.gob.ec/) [![Annexes Badge](https://img.shields.io/badge/Submission-Annexes-critical?color=blue)](https://nextcloud.ambiente.gob.ec)
@@ -19,6 +23,8 @@ Winrock Intl 2025-08-10
 ------------------------------------------------------------------------
 
 Welcome to the [ART-TREES-demo-repository.git](https://github.com/seamusrobertmurphy/TREES-demo-repository), a training resource for submitting a complete data package for an ART TREES verification audit. Here, we document some best practices for using version control to ensure perfect reproducibility of your calculations.
+
+[@osmdata]
 
 As you navigate this repository, keep the following **Data Integrity** concepts in mind, as these are fundamental to how auditors evaluate your submission. For a deeper dive into these principles, see **Repository Guidelines** section below.
 
@@ -43,7 +49,7 @@ git clone https://github.com/seamusrobertmurphy/TREES-demo-repository.git
 
 ------------------------------------------------------------------------
 
-#### Step 2. Replicate the Script[^readme-1]
+#### Step 2. Replicate the Script[^1]
 
 The analysis script and its data are located in the /02_Carbon_Data/ directory. Simply open the ART-TREES-TMR-Replication-Demo.Rmd file in your R environment and run it. The script will automatically perform a simple carbon stock calculation and output the final result.
 
@@ -744,4 +750,4 @@ renv::deactivate()
 devtools::session_info()
 ```
 
-[^readme-1]: Please note that this public repository is for demonstration purposes. To review Winrock’s active audit repository used to replicate previous submissions of your program’s GHG assertions and emissions calculations, you may request access through the following link: <https://github.com/seamusrobertmurphy/TREES-ecuador-repository.git>
+[^1]: Please note that this public repository is for demonstration purposes. To review Winrock’s active audit repository used to replicate previous submissions of your program’s GHG assertions and emissions calculations, you may request access through the following link: <https://github.com/seamusrobertmurphy/TREES-ecuador-repository.git>
