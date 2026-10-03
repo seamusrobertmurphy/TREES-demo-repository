@@ -1,7 +1,3 @@
----
-bibliography: references.bib
----
-
 <img src="https://www.artredd.org/wp-content/themes/arttree2021/dist/svg/art-logo.svg" width="500"/>
 
 [![Program Badge](https://img.shields.io/badge/Project-Steward-critical)](https://github.com/seamusrobertmurphy) [![Annexes Badge](https://img.shields.io/badge/Registry-Resources-critical?color=blue)](https://www.artredd.org/standards/)
@@ -49,7 +45,7 @@ git clone https://github.com/seamusrobertmurphy/TREES-demo-repository.git
 
 ------------------------------------------------------------------------
 
-#### Step 2. Replicate the Script[^1]
+#### Step 2. Replicate the Script[^readme-1]
 
 The analysis script and its data are located in the /02_Carbon_Data/ directory. Simply open the ART-TREES-TMR-Replication-Demo.Rmd file in your R environment and run it. The script will automatically perform a simple carbon stock calculation and output the final result.
 
@@ -750,4 +746,4 @@ renv::deactivate()
 devtools::session_info()
 ```
 
-[^1]: Please note that this public repository is for demonstration purposes. To review Winrock’s active audit repository used to replicate previous submissions of your program’s GHG assertions and emissions calculations, you may request access through the following link: <https://github.com/seamusrobertmurphy/TREES-ecuador-repository.git>
+[^readme-1]: Please note that this public repository is for demonstration purposes. To review Winrock’s active audit repository used to replicate previous submissions of your program’s GHG assertions and emissions calculations, you may request access through the following link: <https://github.com/seamusrobertmurphy/TREES-ecuador-repository.git>
