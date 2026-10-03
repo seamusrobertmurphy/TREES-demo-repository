@@ -2,9 +2,9 @@
 bibliography: references.bib
 ---
 
-<img src="https://art.apx.com/images/ART.png" width="500"/>
+<img src="https://www.artredd.org/wp-content/themes/arttree2021/dist/svg/art-logo.svg" width="500"/>
 
-[![LinkedIn Badge](https://img.shields.io/badge/Project-Profile-blue)](https://art.apx.com/mymodule/reg/TabDocuments.asp?r=111&ad=Prpt&act=update&type=PRO&aProj=pub&tablename=doc&id1=109) [![Pubs Badge](https://img.shields.io/badge/Project-Pubs-critical)](https://orcid.org/my-orcid?orcid=0000-0002-1792-0351) [![Twitter Badge](https://img.shields.io/badge/Project-Tweets-critical?color=blue)](https://x.com/) [![Program Badge](https://img.shields.io/badge/Project-Steward-critical)](https://www.ambiente.gob.ec/) [![Annexes Badge](https://img.shields.io/badge/Submission-Annexes-critical?color=blue)](https://nextcloud.ambiente.gob.ec)
+[![Program Badge](https://img.shields.io/badge/Project-Steward-critical)](https://github.com/seamusrobertmurphy) [![Annexes Badge](https://img.shields.io/badge/Registry-Resources-critical?color=blue)](https://www.artredd.org/standards/)
 
 ------------------------------------------------------------------------
 

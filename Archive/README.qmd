@@ -1,6 +1,6 @@
 ---
 title: "ART-TREES Audit Repository Demo"
-date: "`r Sys.Date()`"
+date: "2025-08-01"
 author: 
   - name: Seamus Murphy
     orcid: 0000-0002-1792-0351 
@@ -92,7 +92,7 @@ div.column {
 
 ------------------------------------------------------------------------
 
-[![LinkedIn Badge](https://img.shields.io/badge/Project-Profile-blue)](https://art.apx.com/mymodule/reg/TabDocuments.asp?r=111&ad=Prpt&act=update&type=PRO&aProj=pub&tablename=doc&id1=109) [![Pubs Badge](https://img.shields.io/badge/Project-Pubs-critical)](https://orcid.org/my-orcid?orcid=0000-0002-1792-0351) [![Twitter Badge](https://img.shields.io/badge/Project-Tweets-critical?color=blue)](https://x.com/) [![Program Badge](https://img.shields.io/badge/Project-Steward-critical)](https://www.ambiente.gob.ec/) [![Annexes Badge](https://img.shields.io/badge/Submission-Files-critical?color=blue)](https://nextcloud.ambiente.gob.ec)
+[![Program Badge](https://img.shields.io/badge/Project-Steward-critical)](https://github.com/seamusrobertmurphy) [![Annexes Badge](https://img.shields.io/badge/Registry-Resources-critical?color=blue)](https://www.artredd.org/standards/)
 
 ------------------------------------------------------------------------
 
